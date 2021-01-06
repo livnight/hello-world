@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Generic title</title>
+  <style>
+    .icon{
+        position: relative;
+        padding: .5em 1em;
+    }
+
+    .icon::before{
+        content: "";
+        position: absolute;
+        background-image: url(data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjAiIHk9IjAiIHZpZXdCb3g9IjAgMCA1MCA1MCIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PHN0eWxlPi5zdDB7ZmlsbDojNGVjNWU3fTwvc3R5bGU+PHBhdGggdHJhbnNmb3JtPSJyb3RhdGUoLTkwIDE1Ljk3MiA0NC41MTcpIiBjbGFzcz0ic3QwIiBkPSJNMTIuNSAzMS45aDYuOXYyNS4yaC02Ljl6Ii8+PHBhdGggdHJhbnNmb3JtPSJyb3RhdGUoLTE4MCA0NC42MTIgMTQuNjc1KSIgY2xhc3M9InN0MCIgZD0iTTQxLjIgMi4xaDYuOXYyNS4yaC02Ljl6Ii8+PHBhdGggdHJhbnNmb3JtPSJzY2FsZSgtMSkgcm90YXRlKC00Ny42MSAtNTguNDU5IDU3LjgzNSkiIGNsYXNzPSJzdDAiIGQ9Ik0yMi4xIDEzLjJIMjl2MjUuMmgtNi45eiIvPjwvc3ZnPg==);
+        background-repeat: no-repeat;
+        width: 10px;
+        height: 10px;
+        top: 3px;
+        margin-left: -10px;
+    }
+
+    .share{
+        font-family: Helvetica,Arial,sans-serif;
+        display: inline-block;
+        line-height: normal;
+        white-space: nowrap;
+        vertical-align: middle;
+        text-align: center;
+        cursor: pointer;
+        -webkit-user-drag: none;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        font-size: 100%;
+        padding: .5em 1em;
+        color: #fff;
+        border: transparent;
+        background-color: #545daa;
+        text-decoration: none;
+        border-radius: 3px;
+    }
+  </style>
+</head>
+<body>
+    <button type="submit" class="share">
+        <span class="icon">Share</span>
+    </button>
+</body>
+</html>
