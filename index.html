@@ -1,58 +1,12 @@
-
 <!DOCTYPE html>
-<html lang='en'>
+<html lang="en">
 <head>
-    <title>Coronavirus killed 1,878 New Yorkers in total</title>
-    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
-    <meta content="utf-8" http-equiv="encoding">
-    <link rel="canonical" href="https://uk.blastingnews.com/health/2020/03/coronavirus-killing-new-yorkers-at-a-staggering-rate-003101041.html"/>
-    <style>
-        .eunomia-account-box, .mastodon-share-box, .eunomia-share-box, .eunomia-article-box {
-            display: flex;align-items: center;font-size: medium; 
-        }
-        body {
-            display: flex;flex-direction:column; max-width: 1024px;margin: auto;
-        }
-    </style>
-    <script src="https://test.mastodononline.site/eunomia/static/eunomia.js"></script>
+  <meta charset="utf-8">
+  <title>Generic title</title>
+  
 </head>
 <body>
-    <h2>Case 2: Share & View/Reply to shared post</h2>
-    <p><b>Option 1: </b>Plain redirection to allow the user create the post (already provided by Mastodon), the user can modify the content before posting<br>
-        Open a link to "https://blasting.eunomia.social/share?text=Coronavirus%20kil…101041.html" <br>
-        &nbsp;&nbsp;&nbsp;<b>- Case 1: </b>The user that shares the post can be any user: We cannot know if the post exists<br>
-        &nbsp;&nbsp;&nbsp;<b>- Case 2: </b>The user that shares the post is a knonw user (@BlastingNews): We can search in Mastodon the user's posts. If the page's title is included in the post, we display a link to the first result we get.
-    </p>
-    <div class="mastodon-share-box">
-        Would you like to share this article on EUNOMIA?
-    </div>
-    <p><b>Option 2: </b>Automatic creation of a new post (OAuth), a bit slower<br>
-        Open a link to "https://blasting.eunomia.social/eunomia/api/share?article_url=https://uk.blastingnews.com/health/…101041.html"<br>
-        In this case, we also save the article's original url<br>
-        &nbsp;&nbsp;&nbsp;<b>- Case 1: </b>The user that shares the post can be any user. We search by the article's url, and display a link to the first result (we could have multple results)<br>
-        &nbsp;&nbsp;&nbsp;<b>- Case 2: </b>The user that shares the post is a knonw user (@BlastingNews). We search by the article's url and the user, and display a link to the first result (we could have multple results, if the same user posts the same article more than once)
-    </p>
-    <div class="eunomia-share-box">
-        Would you like to share this article on EUNOMIA?
-    </div>
-    <div class="eunomia-account-box" style="margin-top: 40px">
-        In any case, don't forget to follow the account ".eunomia-account-box":
-    </div>
-    <h3>"View/Discuss" on a previously shared article</h2>
-    <p>
-        <b>Example:</b> article found (previously created):<br/> <a href="https://uk.blastingnews.com/health/2020/03/coronavirus-killing-new-yorkers-at-a-staggering-rate-003101041.html" target="_blank">
-            https://uk.blastingnews.com/health/2020/03/coronavirus-killing-new-yorkers-at-a-staggering-rate-003101041.html
-        </a>
-    </p>
-    <div style="margin-bottom: 40px;">
-        <h4>Coronavirus killed 1,878 New Yorkers in total</h4>
-        <p>...</p>
-        <p>...</p>
-        <div class="eunomia-article-box" style="display: none;">
-            Discuss this article in EUNOMIA
-        </div>
-        <p>...</p>
-        <p>...</p>
-    </div>
+    <script async defer crossorigin="anonymous" src="sdk.js"></script>
+    <div class="o-share"></div>
 </body>
 </html>
