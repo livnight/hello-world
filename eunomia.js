@@ -186,11 +186,11 @@ function onLoad() {
   setEunomiaShareHandlers();
   getEunomiaEntries();
 }
-//if (articleUrl && eunomiaBase !== "") {
-//    document.addEventListener("DOMContentLoaded", onLoad); 
-//}
-onLoad();
-  
+if (articleUrl && eunomiaBase !== "") {
+    document.addEventListener("DOMContentLoaded", onLoad); 
+}
+console.log("EUNOMIA plugin loaded");
+
   })(window, 'https://test.mastodononline.site', '@BlastingNews' );
 } catch (e) {
   console.log("EUNOMIA plugin could not be loaded");
